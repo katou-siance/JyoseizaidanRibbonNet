@@ -42,19 +42,67 @@
 <noscript>
     <div id="nojs">JavaScriptが無効のため、一部機能がご利用いただけない場合や正しい情報を取得できない場合がございます。</div>
 </noscript>
-<header>
+
+<!-- menu -->
+
+<div id="wrapper" >
+
+    <header id="header_wrap">
+        
+        <div id="toggle">
+            <a href="#" class="toggle_btn">
+                <span class="toggle_txt">MENU</span>
+            </a>
+        </div>
+
+        <div id="menu_box" class="menu_dis">
+            <div id="menu">
+                <nav class="main_menu">
+                    <ul class="menu_list">
+                        <li class="menu_item"><a href="#ribbonnet" class="menu_link menu_link_btn"><span>にいがたRibbon netとは</span></a></li>
+                        <li class="menu_item">
+                            <a href="#index_onlyParent" class="menu_link parent_btn"><span>相談・支援窓口</span></a>
+                            <div class="drop_wrap">
+                                <div class="drop_box">
+                                    <div class="parent_item">
+                                        <a href="#index_onlyParent" class="parent_link menu_link_btn">相談・支援窓口</a>
+                                    </div>
+                                    <ul class="drop_list">
+                                        <li class="drop_item"><a href="#index_onlyParent" class="drop_link menu_link_btn">ひとり親家庭</a></li>
+                                        <li class="drop_item"><a href="#index_job-support" class="drop_link menu_link_btn">就職支援</a></li>
+                                        <li class="drop_item"><a href="#index_food-support" class="drop_link menu_link_btn">食支援・生活用品支援</a></li>
+                                        <li class="drop_item"><a href="#index_life-support" class="drop_link menu_link_btn">住居の支援</a></li>
+                                        <li class="drop_item"><a href="#index_violence" class="drop_link menu_link_btn" >性暴力被害</a></li>
+                                        <li class="drop_item"><a href="#index_advice" class="drop_link menu_link_btn">DV相談</a></li>
+                                        <li class="drop_item"><a href="#index_heart-support" class="drop_link menu_link_btn">こころの悩み</a></li>
+                                        <li class="drop_item"><a href="#index_all-support" class="drop_link menu_link_btn">どんなことでも</a></li>
+                                        <li class="drop_item"><a href="#index_female-support" class="drop_link menu_link_btn">女性の人権について</a></li>
+                                        <li class="drop_item"><a href="#index_other_support" class="drop_link menu_link_btn">様々な支援制度</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>                                    
+                        <li class="menu_item"><a href="#distribution" class="menu_link menu_link_btn"><span>女性用品の配布について</span></a></li>
+                        <li class="menu_item"><a href="#footer_menu" class="menu_link menu_link_btn"><span>お問い合わせ</span></a></li>               
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+    
     <div class="mv_bg">
         <figure class="mainCatch" style="text-align: center; margin: 0">
             <img src="assets/img/pc_img.jpg" alt="困ったこと、一緒に。" style="width: 100%">
         </figure>
     </div>
-</header>
-<div id="wrapper" class="home">
+<div id="main_wrapper">
+
     <div id="primary" class="content-area">
         <main id="main" class="site-main">
             <section class="index_message">
                 <div class="index_wrap">
-                    <h1 class="title" style="padding-bottom: 30px;">
+                    <h1 id="ribbonnet" class="title" style="padding-bottom: 30px;">
                         あなたと一緒に考えたい<br>困っていること、ありませんか
                     </h1>
                     <div class="text-contents">
@@ -77,13 +125,20 @@
                         <p>
                             メールや電話、LINEなど、<span style="display: inline-block;">あなたが話しやすい窓口から</span><br>
                             困っていること、教えてください。<br>
-                            あなたを支えてくれる人が<span style="display: inline-block;">きっと見つかるはず。</span>
+                            あなたを支えてくれる人が<span style="display: inline-block;">きっと見つかるはず。</span><br><br>
                         </p>
+                
+                        <p><span class="link" style="display: inline-block;">
+                        <i class="fas fa-file-pdf" style="color: #d42e11;"></i>
+                        <a href="assets/【ポスター】にいがたRibbonnet.pdf" target="_blank" rel="noreferrer"> ポスター（PDF）</a></span>　｜　
+                        <span class="link" style="display: inline-block;">
+                        <i class="fas fa-file-pdf" style="color: #d42e11;"></i>
+                        <a href="assets/【リーフレット】にいがたRibbonnet.pdf" target="_blank" rel="noreferrer">リーフレット（PDF）</a></span></p>
                     </div>
                 </div>
             </section>
             <!--ひとり親家庭-->
-            <section class="index_onlyParent">
+            <section id="index_onlyParent"  class="index_onlyParent">
                 <div class="index_wrap">
                     <h2 class="sub-title main-title">
                         <span class="contents-title">あなたを支える相談・支援窓口</span>
@@ -142,7 +197,7 @@
                 </div>
             </section>
             <!--就職支援-->
-            <section class="index_job-support">
+            <section id="index_job-support" class="index_job-support">
                 <div class="index_wrap">
                     <div class="job-support">
                         <div class="contents-area">
@@ -159,7 +214,7 @@
                                     </h4>
                                 </div>
                                 <div class="txt-area">
-                                    <span class="noNextLine" style="font-weight: bold;">＜マザーズハローワーク＞</span><br>
+                                    <h5><span class="noNextLine font-bold"><a href="https://www.mhlw.go.jp/stf/newpage_21046.html" target="_brank" rel="noreferrer" >＜マザーズハローワーク事業＞ <img src="assets/img/tab-ty.svg" alt="tab" class="icon-style"></a></span></h5>
                                     <div class="small-text"><img src="assets/img/bill-ty.svg" alt="bill" class="icon-style"> マザーズハローワーク新潟</div>
                                     <div class="number"><img src="assets/img/tell-ty.svg" alt="tell" class="icon-style"> <a href="tel:0252404510" class="border-link">025-240-4510</a></div>
                                     <div class="small-text"><span class="font-bold">受付時間</span><br>平日 9:30～18:15(土日祝・年末年始は休み)</div>
@@ -170,14 +225,18 @@
                                     <br>
                                     <div class="small-text"><img src="assets/img/bill-ty.svg" alt="bill" class="icon-style"> ハローワーク上越マザーズコーナー</div>
                                     <div class="number"><img src="assets/img/tell-ty.svg" alt="tell" class="icon-style"> <a href="tel:0255236121" class="border-link">025-523-6121</a></div>
-                                    <div class="small-text"><span class="font-bold">受付時間</span><br>平日 8:30～17:15(11:45～13:00は休み　土日祝・年末年始は休み)</div>
+                                    <div class="small-text"><span class="font-bold">受付時間</span><br>平日 8:30～17:15(土日祝・年末年始は休み)</div>
+                                    <br>
+                                    <h5><span class="noNextLine font-bold"><a href="https://jsite.mhlw.go.jp/niigata-hellowork/list.html
+                                    " target="_brank" rel="noreferrer" >＜新潟県内ハローワーク一覧＞ <img src="assets/img/tab-ty.svg" alt="tab" class="icon-style"></a></span></h5>
+                                    <div class="small-text">上記以外でも県内ハローワークで相談することができます。</div>
                                 </div>
                             </div>
                             <div class="inner-contents border-line">
                                 <div class="title-area">
                                     <span class="maru"><span>民</span></span>
                                     <h4>
-                                        <a href="https://www.niigata-active.com/rishoku/" target="_blank" rel="noreferrer">にいがたアクティ部（コロナ離職者の再就職支援）　<img src="assets/img/tab-ty.svg" alt="tab" class="icon-style"></a>
+                                        <a href="https://www.niigata-active.com/rishoku/" target="_blank" rel="noreferrer">にいがたアクティ部（概ね40歳以上の方対象の就職支援）　<img src="assets/img/tab-ty.svg" alt="tab" class="icon-style"></a>
                                     </h4>
                                 </div>
                                 <div class="txt-area">
@@ -189,7 +248,7 @@
                 </div>
             </section>
             <!--食支援-->
-            <section class="index_food-support">
+            <section id="index_food-support" class="index_food-support">
                 <div class="index_wrap">
                     <div class="food-support">
                         <div class="contents-area">
@@ -213,7 +272,7 @@
                 </div>
             </section>
             <!-- 住居の支援 -->
-            <section class="index_food-support">
+            <section id="index_life-support" class="index_food-support">
                 <div class="index_wrap">
                     <div class="food-support">
                         <div class="contents-area">
@@ -234,7 +293,7 @@
                 </div>
             </section>
             <!--性的暴力被害-->
-            <section class="index_violence">
+            <section id="index_violence" class="index_violence">
                 <div class="index_wrap">
                     <div class="violence">
                         <div class="contents-area">
@@ -311,7 +370,7 @@
                 </div>
             </section>
             <!--DV相談-->
-            <section class="index_advice">
+            <section id="index_advice" class="index_advice">
                 <div class="index_wrap">
                     <div class="advice">
                         <div class="contents-area">
@@ -418,7 +477,7 @@
                                 <div class="title-area">
                                     <span class="maru"><span>民</span></span>
                                     <h4>
-                                        ウィメンズサポートセンターにいがた
+                                        <a href="https://www.npo-homepage.go.jp/npoportal/detail/108000033" target="_blank" rel="noreferrer">ウィメンズサポートセンターにいがた　<img src="assets/img/tab-re.svg" alt="tab" class="icon-style"></a>
                                     </h4>
                                 </div>
                                 <div class="txt-area">
@@ -433,7 +492,7 @@
                                 <div class="title-area">
                                     <span class="maru"><span>民</span></span>
                                     <h4>
-                                        新潟県配偶者暴力相談支援センター
+                                    <a href="https://www.pref.niigata.lg.jp/sec/chuofukushi/1191429036057.html" target="_blank" rel="noreferrer">新潟県配偶者暴力相談支援センター　<img src="assets/img/tab-re.svg" alt="tab" class="icon-style"></a>
                                     </h4>
                                 </div>
                                 <div class="txt-area">
@@ -446,7 +505,7 @@
                 </div>
             </section>
             <!--こころの悩み-->
-            <section class="index_heart-support">
+            <section id="index_heart-support" class="index_heart-support">
                 <div class="index_wrap">
                     <div class="heart-support">
                         <div class="contents-area">
@@ -459,7 +518,7 @@
                     <span>公</span>
                   </span>
                                     <h4>
-                                        新潟県こころの相談ダイヤル
+                                    <a href="https://www.pref.niigata.lg.jp/sec/shougaifukushi/kokoronosoudan.html" target="_blank" rel="noreferrer">新潟県こころの相談ダイヤル　<img src="assets/img/tab-re.svg" alt="tab" class="icon-style"></a>
                                     </h4>
                                 </div>
                                 <div class="txt-area">
@@ -469,12 +528,34 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="inner-contents border-line">
+                                <div class="title-area">
+                                <span class="maru"><span>民</span></span>
+                                    <h4>
+                                    <a href="https://www.lifelink.or.jp/inochisos/
+                                    " target="_blank" rel="noreferrer">自殺対策（いのちの電話）　<img src="assets/img/tab-re.svg" alt="tab" class="icon-style"></a>
+                                    </h4>
+                                </div>
+                                <div class="txt-area">
+                                    <div class="number"><img src="assets/img/tell-re.svg" alt="tell" class="icon-style"> <a href="tel:0120061338" class="border-link">0120-061-338<br class="break-section"> （おもい　ささえる）</a></div>
+                                    <div class="small-text">
+                                    <span class="font-bold">受付時間</span><br>
+                                    月・水・金曜日　11:00～22:30<br>
+                                    火・木・日曜日　17:00～22:30<br>
+                                    （受付は22：00まで）<br>
+                                    土曜日　11：00～16：30<br>
+                                    （受付は16：00まで）<br>
+                                    ※土曜06:00～火曜24:00まで、木曜06:00～金曜24:00までは連続対応
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        
                     </div>
                 </div>
             </section>
             <!--どんなことでも-->
-            <section class="index_all-support">
+            <section id="index_all-support" class="index_all-support">
                 <div class="index_wrap">
                     <div class="all-support">
                         <div class="contents-area">
@@ -512,6 +593,41 @@
                             <div class="inner-contents border-line">
                                 <div class="title-area">
                   <span class="maru">
+                    <span>民</span>
+                  </span>
+                                    <h4>
+                                        <a href="https://www.niigata-ia.or.jp/foreign/" target="_blank" rel="noreferrer">新潟県外国人総合相談センター　<img src="assets/img/tab-bl.svg" alt="tab" class="icon-style"></a>
+                                    </h4>
+                                </div>
+                                <div class="txt-area">
+                                    <div class="number"><img src="assets/img/tell-bl.svg" alt="tell" class="icon-style"> <a href="tel:0252411881" class="border-link">025-241-1881</a></div>
+                                    <div class="mail noNextLine"><img src="assets/img/mail-re.svg" alt="mail" class="icon-style">
+                                    <script type="text/javascript">
+                                    <!--
+                                    function converter(M){
+                                    var str="", str_as="";
+                                    for(var i=0;i<M.length;i++){
+                                    str_as = M.charCodeAt(i);
+                                    str += String.fromCharCode(str_as + 1);
+                                    }
+                                    return str;
+                                    }
+                                    var ad = converter(String.fromCharCode(109,104,96,48,47,63,109,104,104,102)+String.fromCharCode(96,115,96,44,104,96,45,110,113,45,105,111));
+                                    document.write("<a href=\"mai"+"lto:"+ad+"\">"+ad+"<\/a>");
+                                    //-->
+                                    </script>
+                                    <noscript>（画像などを設置）</noscript>
+
+                                    </div>
+                                    <div class="small-text"><span class="font-bold">受付時間</span><br>月曜～金曜 11:00～12:30、13:40～17：30</div>
+                                    <div class="small-text">月曜日～金曜日　10:00～17:00</div>
+                                    <div class="small-text">※相談受付は16:30まで</div>
+                                    <div class="small-text">(土日祝・年末年始は休み)</div>
+                                </div>
+                            </div>
+                            <div class="inner-contents border-line">
+                                <div class="title-area">
+                  <span class="maru">
                     <span>公</span>
                   </span>
                                     <h4>
@@ -525,6 +641,34 @@
                                     <div class="small-text">※日・祝日と12月29日～1月3日は休み</div>
                                 </div>
                             </div>
+                            <div class="inner-contents border-line">
+                                <div class="title-area">
+                  <span class="maru">
+                    <span>民</span>
+                  </span>
+                                    <h4>
+                                        <a href="https://niigata-bengo.or.jp/" target="_blank" rel="noreferrer">新潟市弁護士会　<img src="assets/img/tab-bl.svg" alt="tab" class="icon-style"></a>
+                                    </h4>
+                                </div>
+                                <div class="txt-area">
+                                    <div class="number"><img src="assets/img/tell-bl.svg" alt="tell" class="icon-style"> <a href="tel:0252225533" class="border-link">025-222-5533</a></div>
+                                    <div class="small-text font-bold">《長岡相談所》 <img src="assets/img/tell-bl.svg" alt="tell" class="icon-style"> <a href="tel:0258-86-5533" class="border-link">0258-86-5533</a></div>
+                                    <div class="small-text"><span class="font-bold">受付時間</span><br>月曜日～金曜日　9:00～17:00</div>
+                                    <div class="small-text">(土日祝・年末年始は休み)</div>
+                                    <div class="small-text">※日・祝日と12月29日～1月3日は休み</div>
+                                </div>
+                            </div>
+                            <div class="inner-contents border-line">
+                                <div class="title-area">
+                  <span class="maru">
+                    <span>公</span>
+                  </span>
+                                    <h4>
+                                        <a href="" target="_blank" rel="noreferrer">生活困窮者自立支援の窓口　<img src="assets/img/tab-bl.svg" alt="tab" class="icon-style"></a>
+                                    </h4>
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -558,7 +702,7 @@
                 </div>
             </section>-->
             <!--女性の人権について-->
-            <section class="index_female-support">
+            <section id="index_female-support" class="index_female-support">
                 <div class="index_wrap">
                     <div class="female-support">
                         <div class="contents-area">
@@ -571,7 +715,7 @@
                     <span>公</span>
                   </span>
                                     <h4>
-                                        女性の人権ホットライン
+                                    <a href="https://www.moj.go.jp/JINKEN/jinken108.html" target="_blank" rel="noreferrer">女性の人権ホットライン　<img src="assets/img/tab-bl.svg" alt="tab" class="icon-style"></a>
                                     </h4>
                                 </div>
                                 <div class="txt-area">
@@ -580,11 +724,26 @@
                                     <div class="small-text">※祝日、年末年始を除く</div>
                                 </div>
                             </div>
+                            <div class="inner-contents border-line">
+                                <div class="title-area">
+                  <span class="maru">
+                    <span>民</span>
+                  </span>
+                                    <h4>
+                                    <a href="https://futeras.org/" target="_blank" rel="noreferrer">風テラス　<img src="assets/img/tab-bl.svg" alt="tab" class="icon-style"></a>
+                                    </h4>
+                                </div>
+                                <div class="txt-area">
+                                    <div class="line-hover"><i class="fab fa-line" style="color: #42cf00"></i> <a href="https://line.me/R/ti/p/%40futeras" target="_blank" rel="noreferrer">https://line.me/R/ti/p/%40futeras</a></div>
+                                    <div class="twitter-hover"><i class="fab fa-twitter" style="color: #369eff"></i> <a href="https://twitter.com/futeras" target="_blank" rel="noreferrer">@futeras</a></div>
+                                    <div class="instagram-hover"><i class="fab fa-instagram" style="color: #ee17c6;"></i> <a href="https://www.instagram.com/futeras_org/" target="_blank" rel="noreferrer">@futeras_org</a></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="index_other_support" style="background-color: #edf8ff;">
+            <section id="index_other_support" class="index_other_support" style="background-color: #edf8ff;">
                 <div class="title-text-blue">
                     <h2 class="contents-sub-title main-title-blue">
                         様々な支援制度
@@ -665,7 +824,7 @@
                 </div>
             </section>
             <!--生理用品の配布について-->
-            <section class="index_distribution">
+            <section id="distribution" class="index_distribution">
                 <div class="title-text-blue">
                     <h2 class="contents-sub-title main-title-blue">
                         相談窓口等で必要な方に<br class="pc-none"/>生理用品を配布しています
@@ -680,13 +839,13 @@
                         <img src="assets/img/image.PNG" alt="tab" style="max-width: 80%;">
                     </a>-->
                     <p style="margin: 30px 0;font-size: 24px;font-weight:bold;">
-                        <a href="assets/配布等窓口一覧表.pdf" target="_blank" rel="noreferrer"><span>配布している相談窓口等はこちら</span></a>
+                        <a href="distribution.php" target="_blank" rel="noreferrer"><span>配布している相談窓口等はこちら</span>　<img src="assets/img/tab-bl.svg" alt="tab" class="icon-style"></a>
                     </p>
                 </div>
             </section>
         </main><!-- #main -->
     </div><!-- #primary -->
-</div>
+</div><!-- #wrapper -->
 <footer id="footer_wrap">
     <div id="footer_area" style="background-color: #ffffff;">
         <div id="return" class="result_footer_background">
@@ -730,6 +889,7 @@ document.write("<a href=\"mai"+"lto:"+ad+"\">"+ad+"<\/a>");
 </script>
         </span><br>
         <span>※公益財団法人新潟県女性財団は、新潟県から委託を受け、この事業を実施しています。</span>
+        <div class="gotop link"><i  class="fas fa-arrow-circle-up" style="color: #e8538a;"></i><a href="javascript:void(0)"  class="btn_return">トップに戻る</a></div>
     </div>
 </footer>
 <script src="assets/jquery/jquery.min.js" type="text/javascript"></script>
@@ -751,10 +911,12 @@ document.write("<a href=\"mai"+"lto:"+ad+"\">"+ad+"<\/a>");
                 $('.img-top').css('top', "12px");
                 $('.sp-size').css('font-size', "0.7rem");
                 $('.f-txt').css({'padding': '10px 0', 'background-color': '#fe7f86'});
+
             } else {
                 $('#main').css('font-size', '125%');
                 $('.subCatch img').css('width', '40%');
                 $('.pc-none').css('display', 'none');
+                
             }
         }
 
@@ -787,6 +949,61 @@ document.write("<a href=\"mai"+"lto:"+ad+"\">"+ad+"<\/a>");
             }
         );
 
+        // ページ内リンクのスクロールアニメーション
+        $('a[href^="#"]').click(function(){
+            var adjust = 0;
+            var speed = 400;
+            var href= $(this).attr("href");
+            var target = $(href == "#" || href == "" ? 'html' : href);
+            var position = target.offset().top + adjust;
+            $('body,html').animate({scrollTop:position}, speed, 'swing');
+            return false;
+        });
+
+    })
+    $(function () {
+
+        $(window).resize(function () {
+            //リサイズされたときの処理
+            spSize();
+        });
+        spSize();
+
+        function spSize() {
+            var windowWidth = $(window).width();
+            if (windowWidth < 574) {
+                $('.parent_btn').addClass('acc');
+                $('.menu_link_btn').addClass('acc');
+            } else {
+                $('.parent_btn').removeClass('acc');
+                $('.menu_link_btn').removeClass('acc');
+            }
+        }
+            //トグルボタン処理
+        $("a.toggle_btn").click(function () {
+        $("#wrapper").toggleClass('fixed');
+        $("#menu_box").toggleClass('menu_dis');
+        $("#toggle a").toggleClass('open');
+        return false;
+        });
+        
+        $(".parent_btn").click(function () {
+            if ($(this).hasClass('acc')) {
+                $(".parent_btn").not(this).removeClass('open');
+                $(".parent_btn").not(this).next().slideUp();
+                $(this).next("div").slideToggle();
+                $(this).toggleClass('open');
+                return false;
+            }
+        }); 
+        $(".menu_link_btn").click(function () {
+            if ($(this).hasClass('acc')) {
+                    $("#wrapper").toggleClass('fixed');
+                    $("#menu_box").toggleClass('menu_dis');
+                    $("#toggle a").toggleClass('open');
+                    return false;
+            }
+        });
     })
 </script>
 </body>
