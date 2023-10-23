@@ -30,7 +30,6 @@
     <meta property="og:title" content="にいがたRibbon net">
     <meta property="og:description" content="にいがたRibbon netのWebサイトです。">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-    <link href="https://use.fontawesome.com/releases/v6.4.2/css/all.css" rel="stylesheet">
     <link rel='stylesheet' href='assets/css/style.css' media='all'/>
 </head>
 <body>
@@ -43,62 +42,36 @@
 <noscript>
     <div id="nojs">JavaScriptが無効のため、一部機能がご利用いただけない場合や正しい情報を取得できない場合がございます。</div>
 </noscript>
+<header>
 
-<!-- menu -->
-
-<div id="wrapper" >
-
-    <header id="header_wrap">
-        
-        <div id="toggle">
-            <div class="toggle_btn">
-                <span class="toggle_txt">MENU</span>
-            </div>
-        </div>
-
-        <div id="menu_box" class="menu_dis">
-            <div id="menu">
-                <nav class="main_menu">
-                    <ul class="menu_list">
-                        <li class="menu_item"><a href="#ribbonnet" class="menu_link menu_link_btn"><span>にいがたRibbon netとは</span></a></li>
-                        <li class="menu_item">
-                            <a href="#index_support" class="menu_link parent_btn"><span>相談・支援窓口</span></a>
-                            <div class="drop_wrap">
-                                <div class="drop_box">
-                                    <div class="parent_item">
-                                        <a href="#index_support " class="parent_link menu_link_btn">相談・支援窓口</a>
-                                    </div>
-                                    <ul class="drop_list">
-                                        <li class="drop_item"><a href="#index_onlyParent" class="drop_link menu_link_btn">ひとり親家庭</a></li>
-                                        <li class="drop_item"><a href="#index_job-support" class="drop_link menu_link_btn">就職支援</a></li>
-                                        <li class="drop_item"><a href="#index_food-support" class="drop_link menu_link_btn">食支援・生活用品支援</a></li>
-                                        <li class="drop_item"><a href="#index_life-support" class="drop_link menu_link_btn">住居の支援</a></li>
-                                        <li class="drop_item"><a href="#index_violence" class="drop_link menu_link_btn" >性暴力被害</a></li>
-                                        <li class="drop_item"><a href="#index_advice" class="drop_link menu_link_btn">DV相談</a></li>
-                                        <li class="drop_item"><a href="#index_heart-support" class="drop_link menu_link_btn">こころの悩み</a></li>
-                                        <li class="drop_item"><a href="#index_all-support" class="drop_link menu_link_btn">どんなことでも</a></li>
-                                        <li class="drop_item"><a href="#index_female-support" class="drop_link menu_link_btn">女性の人権について</a></li>
-                                        <li class="drop_item"><a href="#index_other_support" class="drop_link menu_link_btn">様々な支援制度</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>                                    
-                        <li class="menu_item"><a href="#distribution" class="menu_link menu_link_btn"><span>女性用品の配布について</span></a></li>
-                        <li class="menu_item"><a href="#footer_menu" class="menu_link menu_link_btn"><span>お問い合わせ</span></a></li>               
-                    </ul>
-                </nav>
-            </div>
-        </div>
-
-    </header>
-    
+    <div id="header_wrap">
+        <ul class="header_navi" >
+            <li><a href="#ribbonnet">にいがたリボンネットとは</a></li>
+            <li><a href="#index_onlyParent">相談・支援窓口</a>
+                <ul>
+                    <li><a href="#index_onlyParent">ひとり親家庭</a></li>
+                    <li><a href="#index_job-support">就職支援</a></li>
+                    <li><a href="#index_food-support">食支援・生活用品支援</a></li>
+                    <li><a href="#index_life-support">住居の支援</a></li>
+                    <li><a href="#index_violence">性暴力被害</a></li>
+                    <li><a href="#index_advice">DV相談</a></li>
+                    <li><a href="#index_heart-support">こころの悩み</a></li>
+                    <li><a href="#index_all-support">どんなことでも</a></li>
+                    <li><a href="#index_female-support">女性の人権について</a></li>
+                    <li><a href="#index_other_support">様々な支援制度</a></li>
+                </ul>    
+            </li>
+            <li><a href="#distribution">女性用品の配布について</a></li>
+            <li><a href="#footer_menu">お問い合わせ</a></li>
+        </ul>
+    </div>
     <div class="mv_bg">
         <figure class="mainCatch" style="text-align: center; margin: 0">
             <img src="assets/img/pc_img.jpg" alt="困ったこと、一緒に。" style="width: 100%">
         </figure>
     </div>
-<div id="main_wrapper">
-
+</header>
+<div id="wrapper" class="home">
     <div id="primary" class="content-area">
         <main id="main" class="site-main">
             <section class="index_message">
@@ -138,23 +111,18 @@
                     </div>
                 </div>
             </section>
-            <!--相談・支援窓口-->
-            <section id="index_support"  class="index_onlyParent">
+            <!--ひとり親家庭-->
+            <section id="index_onlyParent"  class="index_onlyParent">
                 <div class="index_wrap">
                     <h2 class="sub-title main-title">
                         <span class="contents-title">あなたを支える相談・支援窓口</span>
                     </h2>
-                </div>
-            </section>
-    <!--ひとり親家庭-->
-                    <section id="index_onlyParent"  class="index_onlyParent">
-                    <div class="index_wrap">
-                        <div class="onlyParent">
-                            <div class="contents-area">
-                                <h3 class="contents-sub-title border-line">
-                                    <i class="fas fa-square"></i> ひとり親家庭
-                                </h3>
-                                <div class="inner-contents border-line">
+                    <div class="onlyParent">
+                        <div class="contents-area">
+                            <h3 class="contents-sub-title border-line">
+                                <i class="fas fa-square"></i> ひとり親家庭
+                            </h3>
+                            <div class="inner-contents border-line">
                                 <div class="title-area">
                   <span class="maru">
                     <span>公</span>
@@ -195,7 +163,7 @@
                                 </div>
                                 <div class="txt-area">
                                     <span class="line-hover"><i class="fab fa-line" style="color: #42cf00"></i> <a href="https://niigata-hitorioya.com/line-2/" target="_blank" rel="noreferrer"><nobr>https://niigata-hito</nobr>rioya.com/line-2/</a></span><br>
-                                    <span class="twitter-hover"><i class="fa-brands fa-x-twitter" style="color: #000000;"></i> <a href="https://twitter.com/1oya_niigata" target="_blank" rel="noreferrer">@1oya_niigata</a></span>
+                                    <span class="twitter-hover"><i class="fab fa-twitter" style="color: #369eff"></i> <a href="https://twitter.com/1oya_niigata" target="_blank" rel="noreferrer">@1oya_niigata</a></span>
                                 </div>
                             </div>
                         </div>
@@ -246,7 +214,7 @@
                                     </h4>
                                 </div>
                                 <div class="txt-area">
-                                    <span class="twitter-hover"><i class="fa-brands fa-x-twitter" style="color: #000000;"></i> <a href="https://twitter.com/niigataactive" target="_blank" rel="noreferrer">@niigataactive</a></span>
+                                    <span class="twitter-hover"><i class="fab fa-twitter" style="color: #369eff"></i> <a href="https://twitter.com/niigataactive" target="_blank" rel="noreferrer">@niigataactive</a></span>
                                 </div>
                             </div>
                         </div>
@@ -341,7 +309,7 @@
                     <span>公</span>
                   </span>
                                     <h4>
-                                    <a href="https://www.npa.go.jp/higaisya/seihanzai/seihanzai.html" target="_blank" rel="noreferrer">性犯罪被害相談電話（警察庁）　<img src="assets/img/tab-re.svg" alt="tab" class="icon-style"></a>
+                                        性犯罪被害相談電話（警察庁）
                                     </h4>
                                 </div>
                                 <div class="txt-area">
@@ -353,7 +321,7 @@
                                 <div class="title-area">
                                     <span class="maru"><span>公</span></span>
                                     <h4>
-                                    <a href="https://www.pref.niigata.lg.jp/site/kenkei/soudan-josei-josei.html" target="_blank" rel="noreferrer">新潟県警察 （性犯罪被害相談電話）　<img src="assets/img/tab-re.svg" alt="tab" class="icon-style"></a>
+                                        新潟県警察 （性犯罪被害相談電話）
                                     </h4>
                                 </div>
                                 <div class="txt-area">
@@ -670,7 +638,7 @@
                     <span>公</span>
                   </span>
                                     <h4>
-                                        <a href="/assets/生活困窮者自立相談支援機関 相談窓口一覧.pdf" target="_blank" rel="noreferrer">生活困窮者自立支援の窓口　<img src="assets/img/tab-bl.svg" alt="tab" class="icon-style"></a>
+                                        <a href="" target="_blank" rel="noreferrer">生活困窮者自立支援の窓口　<img src="assets/img/tab-bl.svg" alt="tab" class="icon-style"></a>
                                     </h4>
                                 </div>
                             </div>
@@ -741,7 +709,7 @@
                                 </div>
                                 <div class="txt-area">
                                     <div class="line-hover"><i class="fab fa-line" style="color: #42cf00"></i> <a href="https://line.me/R/ti/p/%40futeras" target="_blank" rel="noreferrer">https://line.me/R/ti/p/%40futeras</a></div>
-                                    <div class="twitter-hover"><i class="fa-brands fa-x-twitter" style="color: #000000;"></i> <a href="https://twitter.com/futeras" target="_blank" rel="noreferrer">@futeras</a></div>
+                                    <div class="twitter-hover"><i class="fab fa-twitter" style="color: #369eff"></i> <a href="https://twitter.com/futeras" target="_blank" rel="noreferrer">@futeras</a></div>
                                     <div class="instagram-hover"><i class="fab fa-instagram" style="color: #ee17c6;"></i> <a href="https://www.instagram.com/futeras_org/" target="_blank" rel="noreferrer">@futeras_org</a></div>
                                 </div>
                             </div>
@@ -749,7 +717,6 @@
                     </div>
                 </div>
             </section>
-            
             <section id="index_other_support" class="index_other_support" style="background-color: #edf8ff;">
                 <div class="title-text-blue">
                     <h2 class="contents-sub-title main-title-blue">
@@ -852,7 +819,7 @@
             </section>
         </main><!-- #main -->
     </div><!-- #primary -->
-</div><!-- #wrapper -->
+</div>
 <footer id="footer_wrap">
     <div id="footer_area" style="background-color: #ffffff;">
         <div id="return" class="result_footer_background">
@@ -918,12 +885,10 @@ document.write("<a href=\"mai"+"lto:"+ad+"\">"+ad+"<\/a>");
                 $('.img-top').css('top', "12px");
                 $('.sp-size').css('font-size', "0.7rem");
                 $('.f-txt').css({'padding': '10px 0', 'background-color': '#fe7f86'});
-
             } else {
                 $('#main').css('font-size', '125%');
                 $('.subCatch img').css('width', '40%');
                 $('.pc-none').css('display', 'none');
-                
             }
         }
 
@@ -941,7 +906,7 @@ document.write("<a href=\"mai"+"lto:"+ad+"\">"+ad+"<\/a>");
         $('.btn_return').on('click', function () {
             $('body,html').animate({
                 scrollTop: 0
-            }, 300);
+            }, 20);
             return false;
         });
 
@@ -956,61 +921,23 @@ document.write("<a href=\"mai"+"lto:"+ad+"\">"+ad+"<\/a>");
             }
         );
 
-        // ページ内リンクのスクロールアニメーション
+        // #で始まるa要素をクリックした場合に処理
         $('a[href^="#"]').click(function(){
+            // 移動先を0px調整する。0を30にすると30px下にずらすことができる。
             var adjust = 0;
-            var speed = 300;
+            // スクロールの速度（ミリ秒）
+            var speed = 400;
+            // アンカーの値取得 リンク先（href）を取得して、hrefという変数に代入
             var href= $(this).attr("href");
+            // 移動先を取得 リンク先(href）のidがある要素を探して、targetに代入
             var target = $(href == "#" || href == "" ? 'html' : href);
+            // 移動先を調整 idの要素の位置をoffset()で取得して、positionに代入
             var position = target.offset().top + adjust;
+            // スムーススクロール linear（等速） or swing（変速）
             $('body,html').animate({scrollTop:position}, speed, 'swing');
             return false;
         });
 
-    })
-    $(function () {
-
-        $(window).resize(function () {
-            //リサイズされたときの処理
-            spSize();
-        });
-        spSize();
-
-        function spSize() {
-            var windowWidth = $(window).width();
-            if (windowWidth < 820) {
-                $('.parent_btn').addClass('acc');
-                $('.menu_link_btn').addClass('acc');
-            } else {
-                $('.parent_btn').removeClass('acc');
-                $('.menu_link_btn').removeClass('acc');
-            }
-        }
-            //トグルボタン処理
-        $(".toggle_btn").click(function (event) {
-            $("#menu_box").toggleClass('menu_dis');
-            $("#toggle a").toggleClass('open');
-            $("#header_wrap").toggleClass('onColor');
-            return false;
-        });
-        
-        $(".parent_btn").click(function () {
-            if ($(this).hasClass('acc')) {
-                $(".parent_btn").not(this).removeClass('open');
-                $(".parent_btn").not(this).next().slideUp();
-                $(this).next("div").slideToggle();
-                $(this).toggleClass('open');
-                return false;
-            }
-        }); 
-        $(".menu_link_btn").click(function () {
-            if ($(this).hasClass('acc')) {
-                $("#menu_box").toggleClass('menu_dis');
-                $("#toggle a").toggleClass('open');
-                $("#header_wrap").toggleClass('onColor');
-                    return false;
-            }
-        });
     })
 </script>
 </body>
